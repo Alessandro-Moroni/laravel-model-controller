@@ -4,7 +4,7 @@
 
 <div class="container row row-col-3 my-3 ">
 
-    <h1 class="text-center mb-3 ">Movie</h1>
+    <h1 class="text-center mb-3 ">Ordered Movies</h1>
 
     @foreach ($movies as $movie)
 

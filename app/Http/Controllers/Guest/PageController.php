@@ -12,13 +12,18 @@ class PageController extends Controller
         return view('home');
     }
 
-    public function nuovaPagina(){
-        return view('nuova-pagina');
-    }
 
     public function movies(){
+
         $movies = Movie::all();
 
         return view('movies', compact('movies'));
+    }
+
+    public function order(){
+
+        $movies = Movie::orderBy('title')->get();
+
+        return view('order', compact('movies'));
     }
 }

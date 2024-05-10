@@ -13,12 +13,18 @@
     <title>Template</title>
 </head>
 <body>
-    @include('partials.header')
 
-    <main>
-        @yield('content')
-    </main>
+    <div class="container-fluid">
 
-    @include('partials.footer')
+        @include('partials.header')
+
+        <main>
+            @yield('content')
+        </main>
+
+        @include('partials.footer')
+
+    </div>
+
 </body>
 </html>
